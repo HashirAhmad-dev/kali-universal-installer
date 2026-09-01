@@ -1,0 +1,44 @@
+name: Bug report
+description: Something went wrong installing a package with KUPI
+labels: ["bug"]
+body:
+  - type: input
+    id: package-type
+    attributes:
+      label: Package type
+      placeholder: ".deb / .rpm / .AppImage / .run / .sh / archive / .snap / .flatpak"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you dropped, what you clicked, and what went wrong.
+    validations:
+      required: true
+
+  - type: textarea
+    id: log
+    attributes:
+      label: Log output
+      description: Use the **Copy log** button in KUPI and paste it here.
+      render: text
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: KUPI version
+      placeholder: "output of: kupi --version, or the .deb filename"
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      value: |
+        - Distro:
+        - Python (`python3 --version`):
+        - PySide6 (`python3 -c "import PySide6; print(PySide6.__version__)"`):
+        - Installed from: release .deb / built .deb / source

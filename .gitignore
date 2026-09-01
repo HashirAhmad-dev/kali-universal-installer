@@ -1,0 +1,51 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+develop-eggs/
+.installed.cfg
+*.egg
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Build / distribution artifacts ---
+dist/
+*.deb
+*.buildinfo
+*.changes
+
+# --- Test / coverage ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# --- Editors / IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.\#*
+\#*\#
+
+# --- AI assistant / tooling scratch ---
+.claude/
+.aider*
+.cursor/
+CLAUDE.md
+scratchpad/
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+desktop.ini

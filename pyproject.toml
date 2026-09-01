@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kupi"
+version = "1.0.0"
+description = "Universal drag-and-drop package installer for Kali Linux"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Hashir Ahmad", email = "hashirahmad8055@gmail.com" }]
+keywords = ["kali", "installer", "deb", "rpm", "appimage", "flatpak", "snap", "pyside6"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: X11 Applications :: Qt",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Installation/Setup",
+    "Topic :: System :: Software Distribution",
+]
+dependencies = ["PySide6>=6.7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.4"]
+
+[project.urls]
+Homepage = "https://github.com/HashirAhmad-dev/kali-universal-installer"
+Repository = "https://github.com/HashirAhmad-dev/kali-universal-installer"
+Issues = "https://github.com/HashirAhmad-dev/kali-universal-installer/issues"
+Changelog = "https://github.com/HashirAhmad-dev/kali-universal-installer/blob/main/CHANGELOG.md"
+
+[project.scripts]
+kupi = "kupi.__main__:main"
+
+[tool.setuptools]
+packages = ["kupi", "kupi.handlers", "kupi.ui"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-ra -q"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+ignore = ["E501"]

@@ -6,7 +6,7 @@ Architecture: all
 Depends: python3 (>= 3.10), python3-pyside6.qtwidgets, python3-pyside6.qtgui, python3-pyside6.qtcore, pkexec, file
 Recommends: unzip
 Suggests: alien, snapd, flatpak
-Maintainer: Hashir Ahmad <hashirahmad8055@gmail.com>
+Maintainer: Prismovector <info@prismovector.com>
 Installed-Size: @INSTALLED_SIZE@
 Description: universal drag-and-drop package installer for Kali Linux
  Detects the type of a dropped package file and installs it, streaming live

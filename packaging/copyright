@@ -1,9 +1,9 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: kupi
-Upstream-Contact: Hashir Ahmad <hashirahmad8055@gmail.com>
+Upstream-Contact: Prismovector <info@prismovector.com>
 
 Files: *
-Copyright: 2026 Hashir Ahmad
+Copyright: 2026 Prismovector
 License: MIT
 
 License: MIT

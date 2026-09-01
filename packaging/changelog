@@ -9,4 +9,4 @@ kupi (@VERSION@) kali-rolling; urgency=medium
   * Archives are extracted and re-dispatched to an install script or a
     bundled .deb.
 
- -- Hashir Ahmad <hashirahmad8055@gmail.com>  @DATE@
+ -- Prismovector <info@prismovector.com>  @DATE@

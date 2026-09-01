@@ -7,5 +7,5 @@ version 2.1.
 In short: be respectful, assume good faith, and keep discussion focused on the
 work. Harassment or discrimination of any kind is not tolerated.
 
-Report unacceptable behaviour to **hashirahmad8055@gmail.com**. Reports are
+Report unacceptable behaviour to **info@prismovector.com**. Reports are
 handled confidentially.

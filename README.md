@@ -139,4 +139,4 @@ python tests/test_integration.py    # needs PySide6 (offscreen Qt)
 
 ## License
 
-[MIT](LICENSE) © 2026 Hashir Ahmad
+[MIT](LICENSE) © 2026 Prismovector

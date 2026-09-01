@@ -6,7 +6,7 @@ Please **do not** open a public issue for a security problem.
 
 Use GitHub's private vulnerability reporting
 ([Security → Report a vulnerability](https://github.com/HashirAhmad-dev/kali-universal-installer/security/advisories/new)),
-or email **hashirahmad8055@gmail.com** with:
+or email **info@prismovector.com** with:
 
 - what an attacker can do,
 - the class of problem (not a working exploit),

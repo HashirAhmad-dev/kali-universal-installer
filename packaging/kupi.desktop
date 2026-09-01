@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=KUPI
+GenericName=Universal Package Installer
+Comment=Install any Linux package file by drag and drop, with live output
+Exec=kupi %f
+Icon=kupi
+Terminal=false
+Categories=System;PackageManager;
+Keywords=install;package;deb;rpm;appimage;flatpak;snap;archive;
+StartupNotify=true
+MimeType=application/vnd.debian.binary-package;application/x-rpm;application/x-shellscript;application/vnd.appimage;application/vnd.flatpak;application/vnd.snap;

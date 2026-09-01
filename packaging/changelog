@@ -1,0 +1,12 @@
+kupi (@VERSION@) kali-rolling; urgency=medium
+
+  * Initial release.
+  * Drag-and-drop installer for .deb, .rpm, .AppImage, .run/.bin, .sh,
+    tar/zip archives, .snap and .flatpak.
+  * Live merged stdout/stderr via QProcess; Cancel button; outcome check
+    on both exit code and error lines in the output.
+  * Privilege escalation via pkexec, with per-type preflight prompts.
+  * Archives are extracted and re-dispatched to an install script or a
+    bundled .deb.
+
+ -- Hashir Ahmad <hashirahmad8055@gmail.com>  @DATE@

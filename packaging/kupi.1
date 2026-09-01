@@ -1,0 +1,38 @@
+.TH KUPI 1 "2026" "kupi 1.0.0" "User Commands"
+.SH NAME
+kupi \- universal drag-and-drop package installer for Kali Linux
+.SH SYNOPSIS
+.B kupi
+.RI [ FILE ]
+.SH DESCRIPTION
+.B kupi
+opens a single window with a drag-and-drop zone. Drop a Linux package file
+onto it (or pass one on the command line) and it detects the type, shows what
+it will do, and \- on an explicit Install click \- runs the matching install
+commands while streaming their terminal output live.
+.PP
+Supported types: Debian packages (\fB.deb\fR, via apt), RPM packages
+(\fB.rpm\fR, via alien), AppImages (\fB.AppImage\fR: run in place or install to
+~/Applications), self-extracting installers (\fB.run\fR, \fB.bin\fR), shell
+installer scripts (\fB.sh\fR), tar and zip archives (extracted and scanned for
+an install script or bundled .deb), snaps (\fB.snap\fR) and flatpaks
+(\fB.flatpak\fR, \fB.flatpakref\fR).
+.SH OPTIONS
+.TP
+.I FILE
+Optional package file to preload into the window at startup.
+.SH NOTES
+Privilege escalation uses
+.BR pkexec (1),
+which shows a native polkit prompt. Cancelling a running install kills the
+process that was started; a privileged child spawned via pkexec may keep
+running to completion.
+.SH FILES
+.TP
+.I ~/Applications
+Default destination when installing an AppImage.
+.TP
+.I ~/.local/share/applications/kupi-*.desktop
+Launchers written for installed AppImages.
+.SH AUTHOR
+Hashir Ahmad <hashirahmad8055@gmail.com>

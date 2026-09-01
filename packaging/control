@@ -1,0 +1,19 @@
+Package: kupi
+Version: @VERSION@
+Section: admin
+Priority: optional
+Architecture: all
+Depends: python3 (>= 3.10), python3-pyside6.qtwidgets, python3-pyside6.qtgui, python3-pyside6.qtcore, pkexec, file
+Recommends: unzip
+Suggests: alien, snapd, flatpak
+Maintainer: Hashir Ahmad <hashirahmad8055@gmail.com>
+Installed-Size: @INSTALLED_SIZE@
+Description: universal drag-and-drop package installer for Kali Linux
+ Detects the type of a dropped package file and installs it, streaming live
+ terminal output so failures are visible and debuggable. Supported types are
+ Debian and RPM packages, AppImages, self-extracting run/bin installers, shell
+ installer scripts, tar and zip archives, snaps and flatpaks.
+ .
+ Privilege escalation uses pkexec (a native polkit prompt). RPMs are converted
+ with alien; snapd and flatpak are offered on demand. Archives are extracted and
+ scanned for an install script or a bundled Debian package.

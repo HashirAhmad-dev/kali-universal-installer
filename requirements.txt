@@ -1,0 +1,3 @@
+# Runtime dependency. Prefer the distro package (python3-pyside6.qtwidgets);
+# this file is for the source / venv workflow (run.sh, pip).
+PySide6>=6.7
